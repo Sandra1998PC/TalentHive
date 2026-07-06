@@ -1,0 +1,77 @@
+.register{
+  background-color: aliceblue;
+  height: 100vh;
+}
+
+:root{
+  --bgftrclr : #c49ae6;
+  --textClr: #491077;
+  --bthbgClr : #3d0e63;
+  
+}
+
+.regMain{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  gap: 0;
+}
+
+@media screen and (max-width:1000px) {
+  .regImb{
+    display: none;
+  }
+}
+
+.headerText{
+  color : var(--textClr)
+}
+
+.btnStyle{
+  color : var(--textClr);
+  border : 1px var(--bgClr) ;
+  border-radius: 5%;
+
+}
+
+.footer{
+  /* background-color: var(--bgftrclr); */
+  color: var(--textClr);
+}
+
+.sidebar-link{
+    color:white;
+    padding:12px 15px;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.sidebar-link:hover{
+    background:#6f42c1;
+    color:white;
+}
+
+.sidebar-link.active{
+    background:#491077;
+    color:white;
+    font-weight:bold;
+}
+
+.adminSideBar{
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.textColor{
+  color: var(--textClr);
+}
+
+.profile-dropdown .nav-link {
+    color: #491077 !important;
+}
+
+.profile-dropdown .dropdown-item:hover {
+    background: #491077;
+    color: #fff;
+}

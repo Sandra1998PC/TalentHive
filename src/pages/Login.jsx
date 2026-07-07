@@ -8,8 +8,6 @@ import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
-import Home from './Home';
-import AdminHome from './adminHome';
 
 function Login() {
     const [showPassword, setShowPassword] = useState(false);
